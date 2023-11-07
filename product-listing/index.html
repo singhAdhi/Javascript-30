@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a href="index.html">
+                <h2>Clothing Store</h2>
+            </a>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                aria-controls="offcanvasExample">
+                <div class="cart">
+                    <div id="cartAmount" class="cartAmount">0</div>
+                </div>
+            </a>
+
+
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" id="cartData">
+
+
+                </div>
+                <div>
+                    Total
+                    <div id="Total"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <input type="text" id="input">
+
+    <button id="search">Search</button>
+    <select id="dropdown">
+        <option value="">default</option>
+        <option value="pop">Popular</option>
+        <option value="plth">Price low to high</option>
+        <option value="phtl">Price high to low</option>
+    </select>
+    <div class="shop" id="shop">
+
+
+    </div>
+
+
+    </div>
+    <script src="./script.js" defer></script>
+    <script src="./dataModule.js" defer></script>
+</body>
+
+</html>
