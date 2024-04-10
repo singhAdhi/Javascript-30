@@ -25,7 +25,7 @@ let showData = (data) => {
   shop.innerHTML = data
     .map((x) => {
       return `<div id=product-id-${x.id} class="card">
-      <img class="card-img-top h-50" src=${x.image} alt="">
+      <img class="card-img-top" src=${x.image} alt="">
       <div class="card-body">
         <h3 class="card-title">${x.title}</h3>
         <p class="card-text text-truncate">${x.description}</p>
@@ -67,7 +67,7 @@ let showData = (data) => {
     cartData.innerHTML = cart
       .map((x) => {
         return `<div id=product-id-${x.id} class="card my-2">
-          <img class="card-img-top h-50" src=${x.image} alt="">
+          <img class="card-img-top" src=${x.image} alt="">
           <div class="card-body">
             <h3 class="card-title">${x.title}</h3>
             <p class="card-text text-truncate">${x.description}</p>
